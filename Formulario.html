@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ESTE ES MI PRIMER FORMULARIO</h1>
+    <hr>
+    <br>
+    <form>
+        <label for="usuario"> usuario:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Escribe tu nombre aqui">
+        <br>
+        <label for="password"> Conseña:</label>
+        <input type="password" id="password" name="password" placeholder="Escribe tu Conseña">
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones">Estas de acuerdo con las condiciones del contrato?
+        <br>
+        <hr>
+        <h2>Tipo checkbox</h2>
+        <input type="checkbox" name="condiciones" value="html">HTML
+        <input type="checkbox" name="condiciones" value="CSS"> CSS
+        <input type="checkbox" name="condiciones" value="Javascript">JavaScript
+
+        <br>
+        <hr>
+        <h2>Tipo Radio</h2>
+        <input type="radio" name="condiciones" value="html">HTML
+        <input type="radio" name="condiciones" value="CSS"> CSS
+        <input type="radio" name="condiciones" value="Javascript">JavaScript
+
+        <br>
+        <hr>
+        <h2>Entrada Tipo Numero</h2>
+        <label for="Edad">Edad: </label>
+        <input type="number" id="Edad" name="Edad" placeholder="Escriba su edad sin pegar mentiras">
+
+        <br>
+        <hr>
+        <h2>Entrada para subir archivos</h2>
+        <label for="archivos">Puedes Cargar tu Archivo: </label>
+        <input type="file" id="archivo" name="archivo" value="file">
+
+        <br>
+        <hr>
+        <h2>Area de Opiniones cajas de Texto </h2>
+        <label for="Opinion">Puedes desahogarte aqui: </label>
+        <textarea name="Opinion" id="Opinion" cols="80" rows="3"></textarea>
+
+
+        <br>
+        <hr>
+        <h2>Cajas de Seleccion</h2>
+
+        <label for="pais">Puedes escoger tu nacionalidad aqui: </label>
+        <select name="pais" id="pais">
+            <optgroup label="America">
+                <option value="Panama">Panama</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Otros" selected="selected">Otros</option>
+            </optgroup>
+
+
+            <optgroup label="Europa">
+                <option value="España">España</option>
+                <option value="Holanda">Holanda</option>
+                <option value="Rusia">Rusia</option>
+            </optgroup>
+
+
+        </select>
+
+
+
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
