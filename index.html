@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body>
+    <h1>ESTE ES MI PRIMER FORMULARIO</h1>
+    <hr>
+    <br>
+    <form>
+        <label for="usuario"> usuario:</label>
+        <input type="text" id="usuario"  name="usuario" placeholder="Escribe tu nombre aqui" required>
+        <small><b>* Este campo es obligatorio</b></small>
+        <br>
+        <label for="password"> Conseña:</label>
+        <input type="password" id="password" name="password" placeholder="Escribe tu Conseña" required>
+        <small><b>Este campo es obligatorio</b></small>
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones">Estas de acuerdo con las condiciones del contrato?
+        <br>
+        <hr>
+        <h2>Tipo checkbox</h2>
+        <input type="checkbox" name="condiciones" value="html">HTML
+        <input type="checkbox" name="condiciones" value="CSS"> CSS
+        <input type="checkbox" name="condiciones" value="Javascript">JavaScript
+
+        <br>
+        <hr>
+        <h2>Tipo Radio</h2>
+        <input type="radio" name="condiciones" value="html">HTML
+        <input type="radio" name="condiciones" value="CSS"> CSS
+        <input type="radio" name="condiciones" value="Javascript">JavaScript
+
+        <br>
+        <hr>
+        <h2>Entrada Tipo Numero</h2>
+        <label for="Edad">Edad: </label>
+        <input type="number" id="Edad" name="Edad" placeholder="Escriba su edad sin pegar mentiras">
+
+        <br>
+        <hr>
+        <h2>Entrada para subir archivos</h2>
+        <label for="archivos">Puedes Cargar tu Archivo: </label>
+        <input type="file" id="archivo" name="archivo" value="file">
+
+        <br>
+        <hr>
+        <h2>Area de Opiniones cajas de Texto </h2>
+        <label for="Opinion">Puedes desahogarte aqui: </label>
+        <textarea name="Opinion" id="Opinion" cols="80" rows="3"></textarea>
+
+
+        <br>
+        <hr>
+        <h2>Cajas de Seleccion</h2>
+
+        <label for="pais">Puedes escoger tu nacionalidad aqui: </label>
+        <select name="pais" id="pais">
+            <optgroup label="America">
+                <option value="Panama">Panama</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Otros" selected="selected">Otros</option>
+            </optgroup>
+
+
+            <optgroup label="Europa">
+                <option value="España">España</option>
+                <option value="Holanda">Holanda</option>
+                <option value="Rusia">Rusia</option>
+            </optgroup>
+        </select>
+
+
+        <br>
+        <hr>
+        <h2>Para ingresar la fecha en un formulario</h2>
+        <label for="fecha">Puedes ingresar la fecha de inicio: </label>
+        <input type="date" id="fecha" name="fecha" max="2023-03-17">
+        <!-- para limitar la fecha a un dia en particular -->
+
+
+        <br>
+        <hr>
+        <h2>Enviar el fomulario lleno</h2>
+        <br>
+        <input type="submit" value="Envia los datos del formulario">
+        <input type="reset" value="Resetea el formulario">
+
+        <br>
+        <hr>
+        <h2>Creando un Boton</h2>
+        <br>
+        <button onclick="alert('Gracias por participar')"><b> Preciona el boton para ver la magia </b></button>
+
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
