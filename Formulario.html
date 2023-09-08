@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORMULARIO</title>
 </head>
 
 <body>
@@ -13,10 +13,12 @@
     <br>
     <form>
         <label for="usuario"> usuario:</label>
-        <input type="text" id="usuario" name="usuario" placeholder="Escribe tu nombre aqui">
+        <input type="text" id="usuario"  name="usuario" placeholder="Escribe tu nombre aqui" required>
+        <small><b>* Este campo es obligatorio</b></small>
         <br>
         <label for="password"> Conseña:</label>
-        <input type="password" id="password" name="password" placeholder="Escribe tu Conseña">
+        <input type="password" id="password" name="password" placeholder="Escribe tu Conseña" required>
+        <small><b>Este campo es obligatorio</b></small>
         <br>
         <input type="checkbox" name="condiciones" id="condiciones">Estas de acuerdo con las condiciones del contrato?
         <br>
@@ -72,11 +74,29 @@
                 <option value="Holanda">Holanda</option>
                 <option value="Rusia">Rusia</option>
             </optgroup>
-
-
         </select>
 
 
+        <br>
+        <hr>
+        <h2>Para ingresar la fecha en un formulario</h2>
+        <label for="fecha">Puedes ingresar la fecha de inicio: </label>
+        <input type="date" id="fecha" name="fecha" max="2023-03-17">
+        <!-- para limitar la fecha a un dia en particular -->
+
+
+        <br>
+        <hr>
+        <h2>Enviar el fomulario lleno</h2>
+        <br>
+        <input type="submit" value="Envia los datos del formulario">
+        <input type="reset" value="Resetea el formulario">
+
+        <br>
+        <hr>
+        <h2>Creando un Boton</h2>
+        <br>
+        <button onclick="alert('Gracias por participar')"><b> Preciona el boton para ver la magia </b></button>
 
 
     </form>
